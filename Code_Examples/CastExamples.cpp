@@ -28,6 +28,7 @@ int main(){
         cout << "Casting B -> B successful" << endl;
     }
 
+    // Below cast would not succeed as the class heirarchy is different 
     A *ac = new C();
     B *bc = dynamic_cast<B*>(ac);
     if (bc){
